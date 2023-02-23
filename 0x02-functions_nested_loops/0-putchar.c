@@ -1,28 +1,39 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-/**
- * main - entry point
- * Description: prints  if a number is positive or negative.
- * Return: 0
- */
-int main(void)
-{
-	int n;
+#include "main.h"
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	if (n > 0)
-	{
-		printf("%d is positive\n", n);
-	}
-	else if (n == 0)
-	{
-		printf("%d is zero\n", n);
-	}
-	else if (n < 0)
-	{
-		printf("%d is negative\n", n);
-	}
-	return (0);
+/**
+
+ * main - print _putchar
+
+ * is written by mbah
+
+ * Return: 0
+
+ */
+
+
+int main(void)
+
+{
+
+putchar('');
+
+_putchar('p');
+
+_putchar('u');
+
+_putchar('t');
+
+_putchar('c');
+
+_putchar('h');
+
+_putchar('a');
+
+_putchar('r');
+
+_putchar('\n');
+
+return (0);
+
 }
+
