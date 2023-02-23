@@ -1,20 +1,28 @@
-#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
- * main - Entry point
- * Description: prints 'main.h \n'
- * Return: Always 0 (success)
+ * main - entry point
+ * Description: prints  if a number is positive or negative.
+ * Return: 0
  */
 int main(void)
 {
-char str[] = "main.h\n";
-int i = 0;
+	int n;
 
-while (str[i] != '\0')
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	if (n > 0)
 	{
-	char c = str[i];
-
-	_putchar(c);
-	i++;
+		printf("%d is positive\n", n);
 	}
-return (0);
+	else if (n == 0)
+	{
+		printf("%d is zero\n", n);
+	}
+	else if (n < 0)
+	{
+		printf("%d is negative\n", n);
+	}
+	return (0);
 }
